@@ -10,7 +10,9 @@
     "minimize": "webpack --minimize",
     "css": "node css.js",
     "watch": "npm run setup && npm run css && npx webpack --config webpack-serve.config.js --progress",
-    "watchTest": "karma start"
+    "watchTest": "karma start",
+    "heroku-prebuild": "npm install --dev",
+    "start": "npm run setup && npm run css && webpack"
   },
   "keywords": [
     "coveo",
