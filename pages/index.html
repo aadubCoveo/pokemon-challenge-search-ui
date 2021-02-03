@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, height=device-height" />
-    <title>Title</title>
+    <title>Pokedex</title>
     <link rel="stylesheet" href="./css/CoveoFullSearch.css" />
     <link rel="stylesheet" href="./css/coveoextension.css" />
     <script src="js/CoveoJsSearch.Lazy.js"></script>
@@ -22,7 +22,7 @@
   </head>
   <body id="search" class="CoveoSearchInterface" data-enable-history="true">
     <div class="coveo-tab-section">
-      <a class="CoveoTab" data-id="All" data-caption="Pokemon"></a>
+      <a class="CoveoTab" data-id="All" data-caption="Pokedex"></a>
     </div>
     <div class="coveo-search-section">
       <div class="CoveoSettings"></div>
@@ -35,18 +35,21 @@
           data-title="Generation"
           data-field="@generation"
           data-tab="All"
+          data-enable-toggling-operator="true"
         ></div>
         <div
           class="CoveoFacet"
           data-title="Specie"
           data-field="@specie"
           data-tab="All"
+          data-enable-toggling-operator="true"
         ></div>
         <div
           class="CoveoFacet"
           data-title="Types"
           data-field="@types"
           data-tab="All"
+          data-enable-toggling-operator="true"
         ></div>
         <div
           class="CoveoFacetSlider"
@@ -125,11 +128,6 @@
               data-sort-criteria="relevancy"
               data-caption="Relevance"
             ></span>
-            <span
-              class="CoveoSort"
-              data-sort-criteria="date descending,date ascending"
-              data-caption="Date"
-            ></span>
           </div>
         </div>
         <div class="CoveoHiddenQuery"></div>
@@ -137,18 +135,11 @@
         <div class="CoveoErrorReport"></div>
         <div
           class="CoveoResultList"
-          data-layout="list"
-          data-wait-animation="fade"
-          data-auto-select-fields-to-include="true"
-        ></div>
-        <div
-          class="CoveoResultList"
           data-layout="card"
           data-wait-animation="fade"
           data-auto-select-fields-to-include="true"
         ></div>
         <div class="CoveoPager"></div>
-        <div class="CoveoLogo"></div>
         <div class="CoveoResultsPerPage"></div>
       </div>
     </div>
