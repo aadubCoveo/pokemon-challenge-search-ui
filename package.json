@@ -11,8 +11,8 @@
     "css": "node css.js",
     "watch": "npm run setup && npm run css && npx webpack --config webpack-serve.config.js --progress",
     "watchTest": "karma start",
-    "heroku-prebuild": "npm install --dev",
-    "start": "npm run setup && npm run css && webpack"
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "coveo",
@@ -52,5 +52,9 @@
     "webpack-plugin-serve": "^1.2.1",
     "webpack-serve": "^3.2.0",
     "ws": "^7.4.1"
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.434.4"
   }
 }

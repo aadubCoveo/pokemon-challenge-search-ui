@@ -1,5 +1,0 @@
-var coveoSecretData = {
-    orgId: "",
-    apiKey: "",
-  };
-  
