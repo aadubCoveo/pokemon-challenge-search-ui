@@ -10,9 +10,7 @@
     "minimize": "webpack --minimize",
     "css": "node css.js",
     "watch": "npm run setup && npm run css && npx webpack --config webpack-serve.config.js --progress",
-    "watchTest": "karma start",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "watchTest": "karma start"
   },
   "keywords": [
     "coveo",
@@ -52,9 +50,5 @@
     "webpack-plugin-serve": "^1.2.1",
     "webpack-serve": "^3.2.0",
     "ws": "^7.4.1"
-  },
-  "snyk": true,
-  "dependencies": {
-    "snyk": "^1.434.4"
   }
 }
